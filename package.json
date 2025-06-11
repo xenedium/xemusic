@@ -1,0 +1,30 @@
+{
+  "name": "xemusic",
+  "version": "1.0.0",
+  "description": "There is simply no dead simple and open source music bot for me to use on discord, so I decided to make this one",
+  "main": "dist/bot.js",
+  "repository": "git@github.com:xenedium/xemusic.git",
+  "author": "xenedium <ahmed@abderraziq.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@discordjs/voice": "^0.18.0",
+    "bufferutil": "^4.0.9",
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0",
+    "uuid": "^11.1.0",
+    "yt-dlp-wrap": "^2.3.12",
+    "zlib-sync": "^0.1.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "start": "ts-node src/bot.ts",
+    "build": "tsc",
+    "dev": "nodemon src/bot.ts"
+  }
+}
